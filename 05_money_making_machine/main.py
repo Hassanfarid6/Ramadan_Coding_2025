@@ -3,9 +3,9 @@ import random
 import requests
 import time
 
+
+
 st.title("Money Making Machine")
-
-
 
 def generate_money():
     return random.randint(1, 100)
@@ -54,6 +54,5 @@ def fetch_money_quotes():
 st.subheader("Money-Making Motivation")
 if st.button("Get Inspired"):
     quote = fetch_money_quotes()
-    st.success(quote)
-            
+    st.success(quote)       
 
