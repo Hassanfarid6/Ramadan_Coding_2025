@@ -20,8 +20,8 @@ def oauth_callback(
     raw_user_data: Dict[str, str],
     default_user: cl.User,)-> Optional[cl.User]:
 
-    """Handle the OAuth callback from GitHub
-       Return the user object if authentication is successful, None otherwise
+    """
+    Handle the OAuth callback from GitHub Return the user object if authentication is successful, None otherwise
     """
     print(f"Provider: {provide_id}")
     print(f"User data: {raw_user_data}")
