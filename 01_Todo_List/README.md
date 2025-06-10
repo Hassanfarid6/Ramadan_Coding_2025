@@ -15,12 +15,10 @@ python todo.py complete 1
 python todo.py list
 
 
-<!--
- 
 python todo.py add "Doodh khareedna"
 python todo.py add "Ghar saaf karo"
 python todo.py list  # Ye dono tasks dikhaayega
 python todo.py complete 1  # Pehla task complete karega
 python todo.py remove 2  # Doosra task hata dega
 
--->
+
