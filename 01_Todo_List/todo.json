@@ -1,18 +1,14 @@
 [
     {
-        "task": "uv added in json",
+        "task": "hassan added in todo",
+        "done": true
+    },
+    {
+        "task": "Ali Jan added in todo",
         "done": false
     },
     {
-        "task": "uv added in json",
-        "done": false
-    },
-    {
-        "task": "uv added in json",
-        "done": false
-    },
-    {
-        "task": "uv added in json",
+        "task": "uv added",
         "done": false
     }
 ]
