@@ -14,7 +14,6 @@ python todo.py complete 1
 # For list of Task
 python todo.py list
 
-
 python todo.py add "Doodh khareedna"
 python todo.py add "Ghar saaf karo"
 python todo.py list  # Ye dono tasks dikhaayega
