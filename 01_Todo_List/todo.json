@@ -5,10 +5,14 @@
     },
     {
         "task": "Ali Jan added in todo",
-        "done": false
+        "done": true
     },
     {
         "task": "uv added",
         "done": false
+    },
+    {
+        "task": "Ghar saaf karo",
+        "done": true
     }
 ]

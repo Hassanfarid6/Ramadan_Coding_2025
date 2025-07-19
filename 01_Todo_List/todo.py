@@ -5,13 +5,13 @@ import os
 
 TODO_FILE = "todo.json"
 
-def load_tasks():
+def load_tasks():  
     if not os.path.exists(TODO_FILE):
         return []
-    with open(TODO_FILE, "r") as file:
+    with open(TODO_FILE, "r") as file:  # todo me agr task hoga too wo show krega "read krega"
         return json.load(file)
     
-def save_tasks(tasks):
+def save_tasks(tasks):   # task ko right krta hai todo.json me
     with open(TODO_FILE, "w") as file:
         json.dump(tasks, file, indent=4)
 
@@ -22,11 +22,11 @@ def cli():
     pass
 
 @click.command()
-@click.argument("task")
-def add(task):
+@click.argument("task") 
+def add(task):                      # Function add krne ke lya km ata hai 
     """Add a new to the list"""
     tasks = load_tasks()
-    tasks.append({"task": task, "done": False})
+    tasks.append({"task": task, "done": False})  # by default task false hoga
     save_tasks(tasks)
     click.echo(f"Task added: {task}")
 
@@ -37,7 +37,7 @@ def list():
     if not tasks:
         click.echo("No tasks found!")
         return
-    for index, task in enumerate(tasks, 1):
+    for index, task in enumerate(tasks, 1):   # 1 from start like task 1,2,3...
         status = "✓" if task["done"] else "✗"
         click.echo(f"{index}. [{status}] {task['task']}")
 
