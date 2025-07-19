@@ -11,7 +11,7 @@ def load_tasks():
     with open(TODO_FILE, "r") as file:  # todo me agr task hoga too wo show krega "read krega"
         return json.load(file)
     
-def save_tasks(tasks):   # task ko right krta hai todo.json me
+def save_tasks(tasks):   # task ko write krta hai todo.json me
     with open(TODO_FILE, "w") as file:
         json.dump(tasks, file, indent=4)
 
@@ -37,7 +37,7 @@ def list():
     if not tasks:
         click.echo("No tasks found!")
         return
-    for index, task in enumerate(tasks, 1):   # 1 from start like task 1,2,3...
+    for index, task in enumerate(tasks, 1):   # start from 1 like task 1,2,3...
         status = "✓" if task["done"] else "✗"
         click.echo(f"{index}. [{status}] {task['task']}")
 
@@ -47,7 +47,7 @@ def complete(task_number):
     """Mark a task as completed"""
     tasks = load_tasks()
     if 0 < task_number <= len(tasks):
-        tasks[task_number - 1]["done"] =True
+        tasks[task_number - 1]["done"] =True    # agr task 1 hoga to os ko -1 krke 0 krde ga
         save_tasks(tasks)
         click.echo(f"Task {task_number} marked as completed!")
     else:
