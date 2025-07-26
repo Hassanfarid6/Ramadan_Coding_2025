@@ -2,7 +2,7 @@
 <!-- uvicorn main:app --reload -->
 
 
-<!-- | URL                                  | What it does                                 |
+<!-- | URL                                  | What it does                            |
 | ------------------------------------ | -------------------------------------------- |
 | `http://127.0.0.1:8000/`             | Shows welcome message                        |
 | `http://127.0.0.1:8000/side_hustles` | Shows a random side hustle idea              |
